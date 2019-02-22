@@ -1,11 +1,11 @@
 module Main where
 
-import qualified AOC201503                      ( partOne
+import qualified AOC201505                      ( partOne
                                                 , partTwo
                                                 )
 
 main :: IO ()
 main = do
   input <- getContents
-  let solution = AOC201503.partTwo input
+  let solution = AOC201505.partTwo (lines input)
   putStrLn $ "Solution: " ++ show solution
